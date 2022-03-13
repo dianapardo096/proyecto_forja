@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px;
+}
+
+:root{
+    --red-color:#A40101;
+	--blue-color:#2CA3AB;
+	--grey-color:#C4C4C4;
+	--orange-color:#F3610E;
+	--grape-color:#1D1B45;
+    --white-color--: #fff; 
+}
+
+header{
+    width: 100%;
+    height: 180PX;
+    display: flex;
+    align-items: center;  
+    border-style: solid;
+    border-width: 10px 0px 0px 0px;
+    border-color: #444444;  
+   padding: 30px;
+   flex-wrap: wrap;
+   justify-content:space-around;
+   background-image: url(../img/1.\ linea.png);
+   background-position:right 100px;
+   background-repeat: no-repeat;
+
+}
+
+.logo img{
+    padding: 10px;
+    flex-basis: 45%;
+    max-width: 230px;
+    width: 100%;
+    justify-content: right;
+}
+
+.header{
+    display: flex;
+    flex-basis: 45%;
+    justify-content:right;
+    position: relative;
+    top: -30%;
+
+}
+
+.header h2{ 
+    font-size: 12px;
+    color: var(--grey-color);
+
+}
+
+.telefono1 {
+    padding: 10px;
+    display: flex;  
+   
+}
+
+.telefono2 {
+    width: 133px;
+    display: flex;
+    align-content: center;
+    align-items: center;     
+}
+
+.telefono3 {
+    width: 268px;
+    display: flex;
+    align-content: center;
+    align-items: center;     
+}
+
+.boton1{
+    background-color: var(--grape-color);
+    border-radius: 22px;
+    border-color: var(--grape-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: #fff;
+}
+.boton1:hover{
+    color: var(--grape-color);
+    background-color: var(--white-color);
+}
+
+/*body*/
+.medico{
+    width: 100%;
+    height: 330px;
+    padding: 4rem;
+    text-align: center;
+    background-image: url(../img/2.\ medico.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;    
+}
+
+.medico h1{
+    color: var(--orange-color);
+    position: relative;
+    left: -15%;
+    font-weight:300;
+    margin: 0px;
+}
+.medico h2{
+    color: black;
+    font-weight: 500;
+    position: relative;
+    left: -15%;
+    font-size: 35px;
+    margin: 0px;
+}
+
+.medico button {
+    position: relative;
+    left: -15%;
+    font-size: 14px;
+}
+
+.franja img{
+    max-height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#preguntas{
+    display: flex;
+    padding: 2rem;
+    background-image: url(../img/4.\ covid.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0px;
+    
+}
+
+.signos{
+    flex-basis: 50%;
+    padding-left: 3rem;
+}
+
+.signos h1{
+    padding: 10px;
+    font-size: 27px;
+    font-weight: 400;
+    position: relative;
+    color: #195aa5;
+   
+}
+
+.signos h1::before{
+    content:'';
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url(../img/7.\ flechaderecha.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 5px;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+    padding: 5px 10px 10px 0px;
+    color:#444444;
+}
+
+li::before{
+    content:'';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/6.\ check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.quehacer{
+    flex-basis: 50%;
+    padding-left: 3rem;
+}
+
+.quehacer p {
+    font-size: 20px;
+    color: #444444;
+    text-align: justify;
+    padding: 0px 40px 0px 20px;
+}
+
+.quehacer h1{
+    padding: 10px;
+    font-size: 27px;
+    font-weight: 400;
+    position: relative;
+    top: -1.5%;
+    color: #195aa5;
+}
+
+.quehacer h1::before{
+    content:'';
+    display: inline-block;
+    top: 0.5%;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/8.\ question-circle-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 4px;
+}
+
+.quehacer img{
+    max-width: 115px;
+    width: 100%;
+    position: relative;
+    left: 35%;
+    top: -5%;
+}
+
+.quehacer h3{
+    position: relative;
+    left: 22%;
+    top: -12%;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#articulos{
+    margin-top: 0px;
+    background-color: #444444;
+    align-items: center;
+}
+
+.articulo{
+    padding-left: 2rem;
+    height: 40px;
+    background-color: var(--grape-color);
+    color: var(--white-color--);
+    position: relative;
+   
+}
+
+.articulo p{
+    transform: translateY(60%);
+    font-size: 16px;
+}
+
+footer{
+    position: relative;
+    background-color: black;
+    color: var(--white-color--);
+    display: flex;
+    justify-content: center;      
+    height: 80px;
+    margin-top: 8px;
+}
+
+.footer p{
+    font-size: 8px;
+    font: 300;
+    position: relative;
+    top: 0%;
+}
+

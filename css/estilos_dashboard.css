@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px;
+}
+
+:root{
+    --red-color:#A40101;
+	--blue-color:#2CA3AB;
+	--grey-color:#C4C4C4;
+	--orange-color:#F3610E;
+	--grape-color:#1D1B45;
+    --white-color--: #fff; 
+}
+
+#header{
+    display: flex;
+    margin: 0px;
+    background-image: url(../img/13.\ guerreros.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+
+.dashboard{
+    flex-basis: 20%;
+    background-color: var(--grape-color);
+    height: 100vh;
+    justify-content: space-around;
+}
+
+.dashboard img{
+    max-width: 300px;
+    width: 100%;
+    margin-top: 4rem;
+
+}
+.dashboard ul{
+    margin-top: 5rem;
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dashboard a{
+    color: black;
+    font-size: 16px;
+    font-weight:500;
+    text-decoration: none;
+    text-align: center;
+    background-color:#ecececef;
+    border: 3px solid var(--orange-color);
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 8px;
+    display: block;
+}
+
+.dashboard a:hover{
+    background-color: var(--grape-color);
+    color: #ecececef;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.user{
+    margin: 0px;
+    flex-basis: 80%;
+    background-color: rgba(196, 196, 196, 0.5);
+}
+
+.usuario{
+    font-size: 14px;
+    font-weight: 300; 
+    margin-top: 0px;
+    padding: 0px;
+    flex-basis: 80%;
+    position: relative;
+    text-align: right;
+}
+.usuario button{
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    margin: 0px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color:var(--grey-color) ;
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+}
+.usuario i{
+    align-items: center;
+    background-color: var(--white-color--);
+    width: 30px;
+    height: 30px;
+    margin-block-start: 0px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--orange-color);
+    
+}
+.fa-user{
+    padding: 7px;
+}
+.user h1{
+    text-align: center;
+    color: var(--orange-color);
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.documento{
+    height: 67.9vh;
+    position: relative;
+    padding: 3rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.boton1{
+    width: 50px;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    color: var(--white-color--);
+    background-color:var(--grape-color) ;
+    border: 2px solid var(--blue-color);
+    border-radius: 6px; 
+}
+
+.boton1:hover{
+    color: var(--grape-color);
+    background-color: var(--grey-color);
+    cursor: pointer;
+}
+
+.documento input{
+    width: 250px;
+    border: none;
+    border-bottom: 2px solid var(--grape-color);
+    text-align: center;
+    font-size: 15px;
+    background-color: rgba(196, 196, 196, 0.01);
+
+}
+
+.footer{
+    margin: 0px;
+}
+
+.footer img{
+        margin: 0px;  
+        max-height: 9vh;
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        
+}
