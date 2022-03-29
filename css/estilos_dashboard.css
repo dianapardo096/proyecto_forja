@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Poppins', sans-serif; 
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 :root{
@@ -18,29 +18,31 @@ body{
     --white-color--: #fff; 
 }
 
-#header{
-    display: flex;
+.contenedor{
+    width: 100%;
+    height: 100%;
     margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, auto);
     background-image: url(../img/13.\ guerreros.png);
     background-repeat: no-repeat;
-    background-position: 100% 100%;
+    background-position: 50% 55%;
+    background-size: 60%;
 }
 
-.dashboard{
-    flex-basis: 20%;
+.sidebar{
+    grid-column: 1/-1;
+    grid-row: 3/4;  
+    justify-content:flex-start;
+    align-items: center;
     background-color: var(--grape-color);
-    height: 100vh;
-    justify-content: space-around;
+    margin-bottom: 0px;
 }
 
-.dashboard img{
-    max-width: 300px;
-    width: 100%;
-    margin-top: 4rem;
 
-}
-.dashboard ul{
-    margin-top: 5rem;
+.sidebar ul{
+    margin-top: 1rem;
     list-style: none;
     padding-left: 0px;
     display: flex;
@@ -48,9 +50,10 @@ body{
 
 }
 
-.dashboard a{
+.sidebar a{
     color: black;
-    font-size: 16px;
+    width: 99%;
+    font-size: 1rem;
     font-weight:500;
     text-decoration: none;
     text-align: center;
@@ -62,16 +65,34 @@ body{
     display: block;
 }
 
-.dashboard a:hover{
+.sidebar a:hover{
     background-color: var(--grape-color);
     color: #ecececef;
     cursor: pointer;
     transform: scale(1.05);
 }
 
+
+.logo{
+
+    grid-column: 1/-1;
+    grid-row:1/2 ;  
+    background-color: var(--grape-color);
+    display: flex;
+    justify-content: center;
+}
+
+
+.logo img{
+    max-width: 300px;
+    width: 100%;
+    margin-top: 4rem; 
+}
+
 .user{
-    margin: 0px;
-    flex-basis: 80%;
+
+    grid-column: 1/-1;
+    grid-row: 2/3;
     background-color: rgba(196, 196, 196, 0.5);
 }
 
@@ -80,7 +101,6 @@ body{
     font-weight: 300; 
     margin-top: 0px;
     padding: 0px;
-    flex-basis: 80%;
     position: relative;
     text-align: right;
 }
@@ -113,7 +133,7 @@ body{
 .user h1{
     text-align: center;
     color: var(--orange-color);
-    font-size: 38px;
+    font-size: 2.375rem;
     font-weight: 500;
 }
 
@@ -122,12 +142,12 @@ body{
     position: relative;
     padding: 3rem;
     margin: 1rem;
+    align-items: center;
     text-align: center;
 }
 
 .boton1{
     width: 50px;
-    align-items: center;
     margin: 5px;
     padding: 5px;
     color: var(--white-color--);
@@ -146,21 +166,133 @@ body{
     width: 250px;
     border: none;
     border-bottom: 2px solid var(--grape-color);
-    text-align: center;
     font-size: 15px;
     background-color: rgba(196, 196, 196, 0.01);
 
 }
 
 .footer{
-    margin: 0px;
+    grid-column: 1/-1;
+    grid-row: 5/6;
 }
 
 .footer img{
-        margin: 0px;  
-        max-height: 9vh;
+        margin: 0px;   
         height: 100%;
         width: 100%;
         padding: 0px;
         
+}
+
+/*Resolucion tabletas*/
+@media (min-width: 768px) {    
+
+    .contenedor{
+        background-image: url(../img/13.\ guerreros.png);
+        background-repeat: no-repeat;
+        background-position: 85% 55%;
+        background-size: 30%;
+    }
+   
+    .sidebar{
+        grid-column: 1/4; 
+        grid-row:2/6 ;
+        justify-content:flex-start;
+        align-items: center;
+    }
+
+    .sidebar ul{
+        margin-top: 3rem;
+    }
+
+    .logo{
+        grid-column: 1/4;
+        grid-row:1/2 ;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user{
+        grid-column: 4/9;
+        grid-row: 1/3;
+     
+    }
+
+    .footer{
+        grid-column: 4/9;
+        grid-row: 4/5;
+    }
+    
+}
+/*Resolucion Resoluciones medias*/
+@media (min-width: 1024px) {
+
+    .contenedor{
+        background-position: 100% 85%;
+        background-size: 23%;
+    }
+    .sidebar{
+        grid-column: 1/3; 
+        grid-row:2/5 ;
+        justify-content: space-around;
+    }
+    .sidebar ul{
+        margin-top: 5rem;
+    }
+    .logo{
+        grid-column:1/3;
+        grid-row:1/2 ;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .user{
+        grid-column: 3/9;
+        grid-row: 1/3;
+    }
+
+    .footer{
+        grid-column: 3/9;
+        grid-row:3/4;
+    
+    }
+}
+
+
+/*Resolucion Resoluciones macro*/
+@media (min-width: 1200px) {
+    .contenedor{
+        background-position: 100% 81%;
+        background-size: 23%;
+    }
+    .sidebar{
+        grid-column: 1/3; 
+        grid-row:2/5 ;
+        justify-content: space-around;
+    }
+
+    .sidebar ul{
+        margin-top: 5rem;
+    }
+
+    .logo{
+        grid-column:1/3;
+        grid-row:1/2 ;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .user{
+        grid-column: 3/9;
+        grid-row: 1/3;
+    }
+
+    .footer{
+        grid-column: 3/9;
+        grid-row:3/4;
+    
+    }
 }
