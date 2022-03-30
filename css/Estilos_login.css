@@ -28,14 +28,34 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.4);    
+    background-color: rgba(255, 255, 255, 0.4);  
+    background-size: 100%;  
 }
 
 .principal {
-    width: 32%;
+    width: 75%;
+    max-height: 100%;
+    
+}
+
+.retun_home button{
+    background-color: var(--grape-color);
+    border-radius: 8px;
+    border: 2px solid#2CA3AB;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 10rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+
 }
 
 .formulario{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 75vh;
     border-radius: 15px;
@@ -44,16 +64,15 @@ body{
 
 .login1{
     display: flex;
+    flex-basis: 30%;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
     background-color:#a8dde0;
     border-radius: 15px 15px 0px 0px;
-    height: 45%;
     
-
-
 }
+
 .login1 img{
     max-width: 60%;
     width: 100%;
@@ -63,15 +82,18 @@ body{
 }
 
 .login1 h1{
-    font-size: 15px;
+    font-size: 0.8rem;
     font-weight: 500;    
 }
 
 .form{
     background-color: var(--white-color--);
-    height: 55%;
     padding-top: 1.5rem;
     border-radius: 0px 0px 15px 15px;
+    flex-basis: 70%;
+    flex-direction: column;
+    justify-content:space-around;
+    padding: 0.5rem;
     
 }
 
@@ -80,33 +102,33 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 
 .form-group label{
     color: black;
     text-align: center;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .form-group input{
     text-align: center;
     background-color: rgba(168, 221, 224, 0.3);
-    border: 1px solid #a8dde0;
+    border: 2px solid #a8dde0;
     border-radius: 25px;
-    max-width: 65%;
+    max-width: 70%;
     width: 100%;
-    height: 25%;
-    margin-top: 10px;
+    height: 45%;
+    margin-top: 0.5rem;
 
 }
 
 .form-group a{
     color: black;
-    font-size: 12px;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    font-size: 0.75rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
 }
 
 .form-group2{
@@ -134,7 +156,7 @@ body{
 
 .form-group2 a{
     text-decoration: none;
-    font-size: 13px;
+    font-size: 0.75rem;
     color: #fff;
 }
 
@@ -154,16 +176,121 @@ body{
     justify-content: flex-end;
 }
 
-.retun_home button{
-    background-color: var(--grape-color);
-    border-radius: 8px;
-    border: 2px solid#2CA3AB;
-    font-weight: bold;
-    cursor: pointer;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 500;
-    width: 115px;
-    height: 30px;
-    margin-bottom: 1rem;
+
+/*para tabletas*/
+
+@media (min-width: 700px){
+    .principal {
+        width: 60%;
+        max-height: 60vh;
+        align-items: center;
+    }
+
+    .formulario{
+        width: 100%;
+        height: 100%;
+    }
+    .login1{
+        flex-basis: 40%;
+        padding: 1rem;
+    }
+    .form{
+        display:flex;
+        flex-basis: 60%;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+
+    .form-group input{
+        max-width: 75%;
+        width: 100%;
+        height: 45%;
+        margin-top: 0.625rem;
+    }
+
+    .form-group label{
+        font-size: 1.2rem;
+    }
+    
+    .form-group a{
+        font-size: 1rem;
+    }   
+
+}
+
+/*para resoluciones medias*/
+@media (min-width: 1024px){
+
+    .principal {
+        width: 32%;
+    }
+
+    .retun_home button{ 
+        font-size: 0.75rem;
+        width: 8rem;
+        height: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+     
+    .login1{
+        flex-basis: 45%;
+        padding: 1rem;
+    }
+
+    .form{
+        flex-basis: 55%;
+    }
+    .form-group input{
+        max-width: 65%;
+        width: 100%;
+        height: 25%;
+        margin-top: 0.625rem;
+
+    }
+
+} 
+
+/*Resolucion Resoluciones macro*/
+@media (min-width: 1200px) {
+    #login{
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.4);  
+        background-size: 100%;  
+    }
+
+
+    .principal {
+        width: 33%;
+    }
+
+    .retun_home button{ 
+        font-size: 0.75rem;
+        width: 8rem;
+        height: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+     
+    .login1{
+        flex-basis: 50%;
+        padding: 1rem;
+    }
+
+    .form{
+        flex-basis: 50%;
+    }
+    .form-group input{
+        max-width: 65%;
+        width: 100%;
+        height: 25%;
+        margin-top: 0.625rem;
+
+    }
 }
