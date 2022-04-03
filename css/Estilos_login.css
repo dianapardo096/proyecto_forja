@@ -9,7 +9,7 @@ body{
     font-size: 16px;
     background-image: url(../img/10.png);
     background-repeat: no-repeat;
-    display: flex;  
+    
 }
 
 
@@ -109,7 +109,7 @@ body{
     color: black;
     text-align: center;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 
 .form-group input{
@@ -221,6 +221,7 @@ body{
 /*para resoluciones medias*/
 @media (min-width: 1024px){
 
+
     .principal {
         width: 32%;
     }
@@ -256,17 +257,10 @@ body{
 
 /*Resolucion Resoluciones macro*/
 @media (min-width: 1200px) {
-    #login{
-        height: 100vh;
-        background-color: rgba(255, 255, 255, 0.4);  
-        background-size: 100%;  
-    }
-
 
     .principal {
         width: 33%;
     }
-    
     .retun_home button{ 
         font-size: 0.75rem;
         width: 8rem;
@@ -292,5 +286,5 @@ body{
         height: 25%;
         margin-top: 0.625rem;
 
-    }    
+    }
 }

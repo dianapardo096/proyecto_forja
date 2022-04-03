@@ -69,24 +69,30 @@ header img{
     cursor: pointer;
 }
 
-#tabla{
- 
-    margin: 0px;
-    padding: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
 
 .cuerpo{
-    width: 90%;
-    justify-content: left;
-    align-items: left;   
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, auto);
+    width: 100%;
+
 }
 
-.busqueda{
-    display: flex;
-    justify-content: space-between;
+
+.registro{
+    grid-column: 1/-1;
+    grid-row: 3/4; 
+    text-align: center;
+    padding: 5px;
+    
+}
+
+.buscar{
+    grid-column: 1/-1;
+    grid-row: 2/3; 
+    text-align: center;
+    padding: 5px;
+
 }
 
 .boton2{
@@ -131,14 +137,22 @@ header img{
     text-align: left;
 }
 
-.cuerpo h1{
+.cuerpo h1{ 
+    grid-column: 1/-1;
+    grid-row: 1/2; 
     text-align: center;
     padding: 5px;
     font-size: 32px;
     font-weight: 500;
     color: var(--grape-color);
     text-decoration: underline solid var(--blue-color) ;
+}
 
+.tabla{      
+    grid-column: 1/-1;
+    grid-row: 4/4; 
+
+    padding: 5px;
 }
 
 .tabla table{
@@ -478,6 +492,37 @@ h2{
         height: 4.2vh;
         width: 98%;
     }
+
+    .cuerpo{
+        align-items: center;
+        justify-content: left;
+        width: 100%;
+        margin-top: 2rem;
+
+    }
+    
+    .registro{
+        grid-column: 1/1;
+        grid-row: 1/1;  
+    }
+    .buscar{
+        grid-column: 12/13;
+        grid-row: 1/1;  
+        display: flex;
+        justify-content:left; 
+    
+    }
+
+    .cuerpo h1{ 
+        grid-column: 1/-1;
+        grid-row: 3/4; 
+        
+    }
+    .tabla{
+        grid-column: 1/-1;
+        grid-row: 4/4;
+    }
+
     
 } 
 
@@ -552,6 +597,43 @@ h2{
         flex-basis: 30%;
         margin: 1rem;
         font-size: 14px;
+    }
+
+    #tabla{
+        margin: 0px;
+        padding: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cuerpo{
+        align-items: center;
+        justify-content: left;
+        width: 100%;
+
+    }
+    
+    .registro{
+        grid-column: 1/1;
+        grid-row: 1/1;  
+    }
+    .buscar{
+        grid-column: 12/13;
+        grid-row: 1/1;  
+        display: flex;
+        justify-content:left; 
+    
+    }
+
+    .cuerpo h1{ 
+        grid-column: 1/-1;
+        grid-row: 3/4; 
+        
+    }
+    .tabla{
+        grid-column: 1/-1;
+        grid-row: 4/4;
     }
 }
 
@@ -647,6 +729,45 @@ h2{
         flex-basis: 30%;
         margin: 1rem;
         font-size: 14px;
+    }
+
+    #tabla{
+        margin: 0px;
+        padding: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cuerpo{
+        width: 100%;
+        justify-content: left;
+        align-items: left;   
+    }
+    
+    .registro{
+        grid-column: 1/1;
+        grid-row: 1/1;  
+
+    }
+    
+    .buscar{
+        grid-column: 12/13;
+        grid-row: 1/1;  
+        display: flex;
+        justify-content:left; 
+    
+    }
+
+    .cuerpo h1{ 
+        grid-column: 1/-1;
+        grid-row: 3/4; 
+        
+    }
+
+    .tabla{
+        grid-column: 1/-1;
+        grid-row: 4/4;
     }
 
 }
