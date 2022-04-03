@@ -9,7 +9,7 @@ body{
     font-size: 16px;
     background-image: url(../img/10.png);
     background-repeat: no-repeat;
-    
+    display: flex;  
 }
 
 
@@ -41,7 +41,7 @@ body{
 .retun_home button{
     background-color: var(--grape-color);
     border-radius: 8px;
-    border: 2px solid#2CA3AB;
+    border: 2px solid #2CA3AB;
     font-weight: bold;
     cursor: pointer;
     color: #fff;
@@ -266,7 +266,7 @@ body{
     .principal {
         width: 33%;
     }
-
+    
     .retun_home button{ 
         font-size: 0.75rem;
         width: 8rem;
@@ -292,5 +292,5 @@ body{
         height: 25%;
         margin-top: 0.625rem;
 
-    }
+    }    
 }

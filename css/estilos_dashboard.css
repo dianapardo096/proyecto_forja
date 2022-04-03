@@ -185,7 +185,7 @@ body{
 }
 
 /*Resolucion tabletas*/
-@media (min-width: 768px) {    
+@media (min-width: 700px) {    
 
     .contenedor{
         background-image: url(../img/13.\ guerreros.png);
