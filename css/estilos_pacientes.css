@@ -160,6 +160,7 @@ header img{
     border: 2px solid var(--blue-color);
     text-align: center;
     border-collapse: collapse;
+
 }
 
 .tabla table th{
@@ -521,6 +522,7 @@ h2{
     .tabla{
         grid-column: 1/-1;
         grid-row: 4/4;
+        width: 100%;
     }
 
     
@@ -631,7 +633,27 @@ h2{
         grid-row: 3/4; 
         
     }
+
+    .buscar input{
+        font-size: 14px;
+        width: 12rem;
+        height: 4.5vh;
+        text-align: left;
+        margin-right: 0.2rem;
+    }
+
+    .boton2{
+        font-size: 0.813rem;
+        width: 100px;
+        height: 4.5vh;
+        cursor: pointer;
+        color: #fff;
+        padding: 5px;
+        margin: 0px;
+    }
+
     .tabla{
+        width: 100%;
         grid-column: 1/-1;
         grid-row: 4/4;
     }
@@ -766,6 +788,7 @@ h2{
     }
 
     .tabla{
+        width: 100%;
         grid-column: 1/-1;
         grid-row: 4/4;
     }
