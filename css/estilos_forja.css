@@ -99,9 +99,11 @@ header{
 
 .medico1{
     width: 100%;
-    height: 60vh;
-    padding: 4rem;
+    height: 39vh;
+    padding: 2rem;
+    padding-right: 4rem;
     text-align: left;
+    background-color: rgba(250, 250, 250, 0.4);
     background-image: url(../img/2.\ medico.png);
     background-position: center;
     background-size: 100% 100%;
@@ -111,7 +113,6 @@ header{
 
 .medico1 h1{
     color: var(--orange-color);
-
     font-weight:300;
     font-size: 1.8em;
     margin: 0px;
