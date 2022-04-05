@@ -9,6 +9,7 @@ body{
     font-size: 16px;
 }
 
+
 :root{
     --red-color:#A40101;
 	--blue-color:#2CA3AB;
@@ -18,64 +19,65 @@ body{
     --white-color--: #fff; 
 }
 
+
 header{
     width: 100%;
-    height: 180PX;
-    display: flex;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
     align-items: center;  
-    border-style: solid;
-    border-width: 10px 0px 0px 0px;
-    border-color: #444444;  
-   padding: 30px;
-   flex-wrap: wrap;
-   justify-content:space-around;
-   background-image: url(../img/1.\ linea.png);
-   background-position:right 100px;
-   background-repeat: no-repeat;
-
+    border-top: 0.5rem solid #444444;
+    padding: 1rem;
+    background-image: url(../img/1.\ linea.png);
+    background-position:right 100%;
+    background-repeat: no-repeat;
+    background-size: 94%;
 }
 
+.contacto{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-column: 1/5    ;
+    grid-row: 1/2;
+}
+
+.contacto h2{ 
+    font-size: 10px;
+    color: var(--grey-color);
+}
+
+.telefono1{
+    grid-column: 2/3;
+}
+
+.telefono2{
+    grid-column: 3/5;
+}
+
+.telefono3{
+    grid-column: 5/6;
+}
+
+.telefono4{
+    grid-column: 6/10;
+}
+
+.contacto >a{
+    
+    grid-column: 11/13;
+    text-align: right;
+}
+
+.logo{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    text-align: center;
+}
 .logo img{
-    padding: 10px;
-    flex-basis: 45%;
     max-width: 230px;
     width: 100%;
-    justify-content: right;
-}
-
-.header{
-    display: flex;
-    flex-basis: 45%;
-    justify-content:right;
-    position: relative;
-    top: -30%;
-
-}
-
-.header h2{ 
-    font-size: 12px;
-    color: var(--grey-color);
-
-}
-
-.telefono1 {
-    padding: 10px;
-    display: flex;  
-   
-}
-
-.telefono2 {
-    width: 133px;
-    display: flex;
-    align-content: center;
-    align-items: center;     
-}
-
-.telefono3 {
-    width: 268px;
-    display: flex;
-    align-content: center;
-    align-items: center;     
 }
 
 .boton1{
@@ -86,71 +88,77 @@ header{
     padding: 0.5rem 1rem;
     cursor: pointer;
     color: #fff;
+    font-size: 12px;
 }
 .boton1:hover{
     color: var(--grape-color);
     background-color: var(--white-color);
 }
 
-/*body*/
-.medico{
+
+
+.medico1{
     width: 100%;
-    height: 330px;
+    height: 60vh;
     padding: 4rem;
-    text-align: center;
+    text-align: left;
     background-image: url(../img/2.\ medico.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;    
+    text-align: left;
+}
+
+.medico1 h1{
+    color: var(--orange-color);
+
+    font-weight:300;
+    font-size: 1.8em;
+    margin: 0px;
+}
+.medico1 h2{
+    color: black;
+    font-weight: 500;
+    font-size: 2em;
+    margin: 0px;
+}
+
+.medico1 button {
+    font-size: 0.7em;
+}
+
+
+
+.franja{
+    width: 100%;
+    height:5vh;
+    background-image: url(../img/12.\ franja.svg);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;    
 }
 
-.medico h1{
-    color: var(--orange-color);
-    position: relative;
-    left: -15%;
-    font-weight:300;
-    margin: 0px;
-}
-.medico h2{
-    color: black;
-    font-weight: 500;
-    position: relative;
-    left: -15%;
-    font-size: 35px;
-    margin: 0px;
-}
-
-.medico button {
-    position: relative;
-    left: -15%;
-    font-size: 14px;
-}
-
-.franja img{
-    max-height: 100%;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-}
-
 #preguntas{
-    display: flex;
     padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     background-image: url(../img/4.\ covid.jpeg);
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     margin: 0px;
-    
 }
 
 .signos{
-    flex-basis: 50%;
-    padding-left: 3rem;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding-left: 1rem;
+
 }
 
 .signos h1{
-    padding: 10px;
-    font-size: 27px;
+    padding: 0.8rem;
+    font-size: 1.7rem;
     font-weight: 400;
     position: relative;
     color: #195aa5;
@@ -160,8 +168,8 @@ header{
 .signos h1::before{
     content:'';
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 2rem;
+    height: 2rem;
     background-image: url(../img/7.\ flechaderecha.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -171,7 +179,7 @@ header{
 
 li{
     list-style: none;
-    font-size: 20px;
+    font-size: 1rem;
     padding: 5px 10px 10px 0px;
     color:#444444;
 }
@@ -179,33 +187,35 @@ li{
 li::before{
     content:'';
     display: inline-block;
-    width: 22px;
-    height: 22px;
+    width: 1rem;
+    height: 1rem;
     background-image: url(../img/6.\ check.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin-right: 5px;
+    
 }
 
 .quehacer{
-    flex-basis: 50%;
-    padding-left: 3rem;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    padding-left: 1rem;
+    text-align: center;
 }
 
 .quehacer p {
-    font-size: 20px;
+    font-size: 1rem;
     color: #444444;
     text-align: justify;
     padding: 0px 40px 0px 20px;
 }
 
 .quehacer h1{
-    padding: 10px;
-    font-size: 27px;
+    padding: 0.8rem;
+    font-size: 1.7rem;
     font-weight: 400;
-    position: relative;
-    top: -1.5%;
+    text-align: left;
     color: #195aa5;
 }
 
@@ -225,37 +235,29 @@ li::before{
 .quehacer img{
     max-width: 115px;
     width: 100%;
-    position: relative;
-    left: 35%;
-    top: -5%;
+    margin-bottom: 1rem;
 }
 
 .quehacer h3{
-    position: relative;
-    left: 22%;
-    top: -12%;
-    font-size: 15px;
+    text-align: center;
+    font-size: 0.8rem;
     font-weight: 300;
 }
 
 #articulos{
-    margin-top: 0px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, auto);
+    margin: 0px;
     background-color: #444444;
     align-items: center;
 }
 
-.articulo{
-    padding-left: 2rem;
+.articulo1, .articulo2, .articulo3, .articulo4, .articulo5{
+    padding-left: 1.5rem;
     height: 40px;
     background-color: var(--grape-color);
     color: var(--white-color--);
-    position: relative;
-   
-}
-
-.articulo p{
-    transform: translateY(60%);
-    font-size: 16px;
+    font-size: 0.9em;
 }
 
 footer{
@@ -275,3 +277,224 @@ footer{
     top: 0%;
 }
 
+/*para resoluciones tableta*/
+
+@media (min-width: 768px) {
+    header{
+        height: 20vh;
+    }
+    
+    .contacto >a{
+        grid-column: 10/13;
+        text-align: right;
+    }
+
+    .medico1{
+        width: 100%;
+        height: 45vh;
+        padding: 4rem;
+        text-align: center; 
+    }
+
+    .medico1 h1{
+        position: relative;
+        left: -15%;
+        top: 20%;
+        font-weight:300;
+        font-size: 2rem;
+        margin: 0px;
+    }
+
+    .medico h2{
+        position: relative;
+        left: -15%;
+        top: 20%;
+        font-size: 2.2rem;
+    }
+    
+    .medico1 button {
+        position: relative;
+        left: -15%;
+        top: 20%;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    li{
+        position: relative;
+        left: 30%;
+    }
+
+}
+
+/*para resoluciones medias*/
+
+@media (min-width: 1024px) {
+    header{
+        background-size: 65%;
+        height: 30vh;
+    }
+
+    .contacto{
+        grid-column: 2/5;
+    }
+
+    .logo{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        
+    }
+
+    .franja{
+        height: 8vh;
+    }
+
+    .signos{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        padding-left: 2rem;
+    
+    }
+
+    .signos h1{
+        padding: 10px;
+        font-size: 1.7rem;
+        position: relative;
+
+       
+    }
+    
+    li{
+        font-size: 1.3rem;
+        position: relative;
+        left: 0;
+    }
+
+
+    .quehacer{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        padding-left: 2rem;
+    }
+
+    .quehacer p {
+        font-size: 1.3rem;
+    }
+    
+    .quehacer h1{
+        padding: 10px;
+        font-size: 27px;
+    }
+    
+    .quehacer h3{
+        font-size: 1.1rem;
+    }
+
+}
+
+
+/*para resoluciones macro*/
+
+@media (min-width: 1200px) {
+    header{
+        background-size: 65%;
+        height: 25vh;
+    }
+
+    .contacto{
+        grid-column: 2/5;
+        grid-row: 1/2;
+    }
+    .contacto h2{ 
+        font-size: 12px;
+    }
+    .telefono1{
+        grid-column: 2/3;
+    }
+
+    .telefono2{
+        grid-column: 3/5;
+    }
+
+    .telefono3{
+        grid-column: 5/6;
+    }
+
+    .telefono4{
+        grid-column: 6/9;
+    }
+
+    .contacto >a{
+        grid-column: 11/13;
+        text-align: right;
+    }
+
+    .logo{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    .medico1{
+        width: 100%;
+        height: 55vh;
+        padding: 4rem;
+        text-align: center; 
+    }
+    .medico1 h1{
+        position: relative;
+        left: -15%;
+        font-weight:300;
+        font-size: 2rem;
+        margin: 0px;
+    }
+
+    .medico h2{
+        position: relative;
+        left: -15%;
+        font-size: 2.2rem;
+    }
+
+    .franja{
+        height: 9vh;
+    }
+    
+    .medico1 button {
+        font-size: 14px;
+        position: relative;
+        left: -15%;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .signos{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        padding-left: 3rem;
+    
+    }
+
+    .quehacer{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        padding-left: 3rem;
+    }
+
+    .quehacer p{
+        font-size: 1.3rem;
+    }
+
+    li{
+        font-size: 1.3rem;
+    }
+
+    .quehacer img{
+        max-width: 115px;
+        width: 100%;
+    }
+
+    
+
+    .articulo1, .articulo2, .articulo3, .articulo4, .articulo5{
+        font-size: 1em;
+    }
+    
+}

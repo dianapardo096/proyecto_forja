@@ -439,6 +439,14 @@ h2{
 }
 
 
+@media (max-width: 400px) { /*use un diseño responsive para dispositivos más pequeños (como el iphone SE) pero solo para la tabla*/
+    table {
+      display: block;
+      overflow-x: auto;
+    }
+}
+
+
 /*Resolucion tabletas*/
 @media (min-width: 768px) {
     .header{
