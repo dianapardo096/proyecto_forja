@@ -2,7 +2,6 @@
 
 *{
     box-sizing: border-box;
-    margin:0%;
 }
 
 body{
@@ -96,24 +95,13 @@ header{
     background-color: var(--white-color);
 }
 
-.medico{
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, auto);
-    background-image: url(/img/12.\ franja.svg);
-    background-position: bottom;
-    background-size: 100%;
-    background-repeat: no-repeat;    
-    gap: 0px;
-}
+
 
 .medico1{
     width: 100%;
-    height: 39vh;
-    padding: 2rem;
-    padding-right: 4rem;
-    margin: 0%;
+    height: 40vh;
+    padding: 4rem;
     text-align: left;
-    background-color: rgba(250, 250, 250, 0.4);
     background-image: url(../img/2.\ medico.png);
     background-position: center;
     background-size: 100% 100%;
@@ -123,6 +111,7 @@ header{
 
 .medico1 h1{
     color: var(--orange-color);
+
     font-weight:300;
     font-size: 1.8em;
     margin: 0px;
@@ -142,12 +131,11 @@ header{
 
 .franja{
     width: 100%;
-    height:6.5vh;
+    height:5vh;
     background-image: url(../img/12.\ franja.svg);
     background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;  
-    margin: 0%;  
+    background-size: 100%;
+    background-repeat: no-repeat;    
 }
 
 #preguntas{
@@ -293,7 +281,7 @@ footer{
 
 @media (min-width: 768px) {
     header{
-        height: 30vh;
+        height: 20vh;
     }
     
     .contacto >a{
@@ -315,10 +303,6 @@ footer{
         font-weight:300;
         font-size: 2rem;
         margin: 0px;
-    }
-
-    .franja{
-        height: 8.5vh;
     }
 
     .medico h2{
@@ -362,7 +346,7 @@ footer{
     }
 
     .franja{
-        height: 10vh;
+        height: 8vh;
     }
 
     .signos{
@@ -470,7 +454,7 @@ footer{
     }
 
     .franja{
-        height: 11vh;
+        height: 9vh;
     }
     
     .medico1 button {
@@ -495,11 +479,11 @@ footer{
     }
 
     .quehacer p{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     li{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .quehacer img{
