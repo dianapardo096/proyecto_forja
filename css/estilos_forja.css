@@ -96,7 +96,15 @@ header{
     background-color: var(--white-color);
 }
 
-
+.medico{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+    background-image: url(/img/12.\ franja.svg);
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;    
+    gap: 0px;
+}
 
 .medico1{
     width: 100%;
@@ -134,7 +142,7 @@ header{
 
 .franja{
     width: 100%;
-    height:4vh;
+    height:6.5vh;
     background-image: url(../img/12.\ franja.svg);
     background-position: center;
     background-size: 100% 100%;
@@ -285,7 +293,7 @@ footer{
 
 @media (min-width: 768px) {
     header{
-        height: 20vh;
+        height: 30vh;
     }
     
     .contacto >a{
@@ -307,6 +315,10 @@ footer{
         font-weight:300;
         font-size: 2rem;
         margin: 0px;
+    }
+
+    .franja{
+        height: 8.5vh;
     }
 
     .medico h2{
@@ -350,7 +362,7 @@ footer{
     }
 
     .franja{
-        height: 8vh;
+        height: 9vh;
     }
 
     .signos{
@@ -458,7 +470,7 @@ footer{
     }
 
     .franja{
-        height: 9vh;
+        height: 11vh;
     }
     
     .medico1 button {
