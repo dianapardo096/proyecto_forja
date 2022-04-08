@@ -87,6 +87,16 @@ body{
     max-width: 300px;
     width: 100%;
     margin-top: 4rem; 
+
+    animation: logo 1s ease-in 1s 1;
+}
+
+
+
+@keyframes  logo {
+    50%{
+        transform: translateY(-100%);
+    }
 }
 
 .user{
@@ -135,6 +145,14 @@ body{
     color: var(--orange-color);
     font-size: 2.375rem;
     font-weight: 500;
+
+    animation: bienvenido 3s ease-in 2s infinite;
+}
+
+@keyframes  bienvenido {
+    50%{
+        color: var(--grape-color);
+    }
 }
 
 .documento{

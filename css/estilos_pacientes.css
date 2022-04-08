@@ -53,7 +53,7 @@ header img{
     border-bottom: 5px solid var(--blue-color);
 }
 
-.boton1{
+.boton1, .boton6{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -62,11 +62,31 @@ header img{
     align-items: center;
     margin: 5px;
 
+
 }
 
-.boton1:hover{
+.boton1{
+    animation: boton 1s ease-in 1s 1;
+}
+
+
+.boton6{
+    animation: boton 1s ease-in 2s 1;
+}
+
+.boton1:hover, .boton6:hover{
     transform: scale(1.2);
     cursor: pointer;
+}
+
+@keyframes  boton {
+    50%{
+        background-color: #275053;
+    }
+
+    100%{
+        transform: translateY(30%);
+    }
 }
 
 
@@ -171,7 +191,22 @@ header img{
    color: var(--white-color--);
    font-size: 13px;
    font-weight: 600;
+
+   animation: encabezados 2s ease-in 2s infinite;
    
+}
+
+
+
+@keyframes encabezados {
+
+    50%{
+        transform: translateY(-5%);
+    }
+
+    100%{
+        transform: scale(1.2);
+    }
 }
 
 .tabla table td{
@@ -311,6 +346,16 @@ footer{
 
 .guardar{
      margin: 1rem;
+}
+
+.guardar .boton2{
+animation: guardar 1s ease-in 2s infinite;
+}
+
+@keyframes guardar {
+    50%{
+        transform: scale(1.2);
+    }
 }
 
 form{

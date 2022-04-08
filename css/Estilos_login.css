@@ -51,6 +51,20 @@ body{
     height: 2rem;
     margin-bottom: 1rem;
 
+    animation: index 2s ease-in 1s 2;
+
+}
+
+
+@keyframes index {
+    50%{
+        transform: translateX(100%) translateY(50%);
+        
+    }
+
+    20%{
+        background-color: #2CA3AB;
+    }
 }
 
 .formulario{
@@ -84,7 +98,15 @@ body{
 .login1 h1{
     font-size: 0.8rem;
     font-weight: 500;    
+    animation: lema 1s ease-in 2s infinite;
 }
+
+@keyframes lema {
+    50%{
+        transform: scale(1.2);
+    }
+}
+
 
 .form{
     background-color: var(--white-color--);
