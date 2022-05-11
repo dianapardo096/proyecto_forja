@@ -54,8 +54,10 @@ function documento(){
                 html:'<b>Documento:</b>52368795<br><h2>Primera dosis</h2><b>Fecha de Aplicación:</b>09/03/2022<br><b>Sede:</b>Titán Plaza<br><b>Nombre del biológico:</b> Pfizer',
                 confirmButtonText: 'Registrar dosis',
                 confirmButtonColor: '#F3610E',
-              })
-            } 
+              }).then((value) => {
+                window.location. href='registro_vacunas.html'
+              });
+            }
           })
         
     }else if (doc==1001235478){
@@ -76,7 +78,9 @@ function documento(){
                 html:'<b>Documento:</b>1001235478<br><h2>Primera dosis</h2><b>Fecha de Aplicación:</b>09/09/2021<br><b>Sede:</b>Titán Plaza<br><b>Nombre del biológico:</b> AstraZeneca <h2>Segunda dosis</h2><b>Fecha de Aplicación:</b>15/02/2022<br><b>Sede:</b>Bulevar Niza<br><b>Nombre del biológico:</b>AstraZeneca',
                 confirmButtonText: 'Registrar dosis',
                 confirmButtonColor: '#F3610E',
-              })
+              }).then((value) => {
+                window.location. href='registro_vacunas.html'
+              });
             } 
           })
     }else if (doc==25413574){
@@ -122,4 +126,10 @@ function documento(){
           })
     }
 
+}
+
+// funcion para datos registrados
+function guardado(){
+
+  window.location. href='dashboard.html'
 }
