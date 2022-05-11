@@ -1,3 +1,6 @@
+
+//Funcion para confirmar usuario y contraseña del login
+
 function ingreso(){
 
     let user=document.getElementById("username").value;
@@ -28,6 +31,95 @@ function ingreso(){
     }
 }
 
+
+//Funcion para confirmar numeros de documento en el dash board
 function documento(){
+    let doc=document.getElementById("Doc").value;
+
+    if (doc==52368795){
+        Swal.fire({
+            icon: 'info',
+            title: 'Señor usuario',
+            text: 'El paciente identificado con el número '+doc+' ya cuenta con la primera dosis del esquema',
+            showDenyButton: false,
+            showCancelButton: true,
+            confirmButtonText: 'Revisar',
+            confirmButtonColor: '#F3610E',
+            cancelButtonText: 'Cancelar',
+          }).then((result) => {
+
+            if (result.isConfirmed) {
+              Swal.fire({
+                title: 'Myriam Avila Vargas',
+                html:'<b>Documento:</b>52368795<br><h2>Primera dosis</h2><b>Fecha de Aplicación:</b>09/03/2022<br><b>Sede:</b>Titán Plaza<br><b>Laboratorio:</b>Pfizer',
+                confirmButtonText: 'Registrar dosis',
+                confirmButtonColor: '#F3610E',
+              })
+            } 
+          })
+        
+    }else if (doc==1001235478){
+        Swal.fire({
+            icon: 'info',
+            title: 'Señor usuario',
+            text: 'El paciente identificado con el número '+doc+' ya cuenta con dos dosis del esquema',
+            showDenyButton: false,
+            showCancelButton: true,
+            confirmButtonText: 'Revisar',
+            confirmButtonColor: '#F3610E',
+            cancelButtonText: 'Cancelar',
+          }).then((result) => {
+
+            if (result.isConfirmed) {
+              Swal.fire({
+                title: 'Sebastian Avila Vargas',
+                html:'<b>Documento:</b>1001235478<br><h2>Primera dosis</h2><b>Fecha de Aplicación:</b>09/09/2021<br><b>Sede:</b>Titán Plaza<br><b>Laboratorio:</b>AstraZeneca <h2>Segunda dosis</h2><b>Fecha de Aplicación:</b>15/02/2022<br><b>Sede:</b>Bulevar Niza<br><b>Laboratorio:</b>AstraZeneca',
+                confirmButtonText: 'Registrar dosis',
+                confirmButtonColor: '#F3610E',
+              })
+            } 
+          })
+    }else if (doc==25413574){
+        Swal.fire({
+            icon: 'info',
+            title: 'Señor usuario',
+            text: 'El paciente identificado con el número '+doc+' ya cuenta con el esquema completo',
+            showDenyButton: false,
+            showCancelButton: true,
+            confirmButtonText: 'Revisar',
+            confirmButtonColor: '#F3610E',
+            cancelButtonText: 'Cancelar',
+          }).then((result) => {
+
+            if (result.isConfirmed) {
+              Swal.fire({
+                title: 'Ana Teresa Vargas Torres',
+                html:'<b>Documento:</b>25413574<br><h2>Primera dosis</h2><b>Fecha de Aplicación:</b>09/03/2021<br><b>Sede:</b>Titán Plaza<br><b>Laboratorio:</b>Sinovac <h2>Segunda dosis</h2><b>Fecha de Aplicación:</b>15/04/2021<br><b>Sede:</b>Bulevar Niza<br><b>Laboratorio:</b>Sinovac <h2>Tercera dosis</h2><b>Fecha de Aplicación:</b>04/11/2021<br><b>Sede:</b>Bulevar Niza<br><b>Laboratorio:</b>Moderna',
+                confirmButtonText: 'ok',
+                confirmButtonColor: '#F3610E',
+              })
+            } 
+          })
+    }else if (doc==1007203506){
+        Swal.fire({
+            position: 'center',
+            icon: 'info',
+            title: 'Señor usuario',
+            text: 'El paciente identificado con el número '+doc+' no cuenta con ninguna dosis del esquema',
+            confirmButtonText:
+            'Registrar',
+            confirmButtonColor: '#F3610E',
+          }).then((value) => {
+            window.location. href='registro.html'
+          });
+    }else{
+        Swal.fire({
+            icon: 'error',
+            title: 'Usuario no valido',
+            confirmButtonText:
+            'Regresar',
+            confirmButtonColor: '#F3610E',
+          })
+    }
 
 }
