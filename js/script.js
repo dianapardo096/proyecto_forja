@@ -51,7 +51,7 @@ function documento(){
             if (result.isConfirmed) {
               Swal.fire({
                 title: 'Myriam Avila Vargas',
-                html:'<b>Documento:</b>52368795<br><h2>Primera dosis</h2><b>Fecha de Aplicación:</b>09/03/2022<br><b>Sede:</b>Titán Plaza<br><b>Laboratorio:</b>Pfizer',
+                html:'<b>Documento:</b>52368795<br><h2>Primera dosis</h2><b>Fecha de Aplicación:</b>09/03/2022<br><b>Sede:</b>Titán Plaza<br><b>Nombre del biológico:</b> Pfizer',
                 confirmButtonText: 'Registrar dosis',
                 confirmButtonColor: '#F3610E',
               })
@@ -73,7 +73,7 @@ function documento(){
             if (result.isConfirmed) {
               Swal.fire({
                 title: 'Sebastian Avila Vargas',
-                html:'<b>Documento:</b>1001235478<br><h2>Primera dosis</h2><b>Fecha de Aplicación:</b>09/09/2021<br><b>Sede:</b>Titán Plaza<br><b>Laboratorio:</b>AstraZeneca <h2>Segunda dosis</h2><b>Fecha de Aplicación:</b>15/02/2022<br><b>Sede:</b>Bulevar Niza<br><b>Laboratorio:</b>AstraZeneca',
+                html:'<b>Documento:</b>1001235478<br><h2>Primera dosis</h2><b>Fecha de Aplicación:</b>09/09/2021<br><b>Sede:</b>Titán Plaza<br><b>Nombre del biológico:</b> AstraZeneca <h2>Segunda dosis</h2><b>Fecha de Aplicación:</b>15/02/2022<br><b>Sede:</b>Bulevar Niza<br><b>Nombre del biológico:</b>AstraZeneca',
                 confirmButtonText: 'Registrar dosis',
                 confirmButtonColor: '#F3610E',
               })
@@ -83,7 +83,7 @@ function documento(){
         Swal.fire({
             icon: 'info',
             title: 'Señor usuario',
-            text: 'El paciente identificado con el número '+doc+' ya cuenta con el esquema completo',
+            text: 'El paciente identificado con el número '+doc+' ya cuenta con el esquema de vacunación completo',
             showDenyButton: false,
             showCancelButton: true,
             confirmButtonText: 'Revisar',
@@ -94,7 +94,7 @@ function documento(){
             if (result.isConfirmed) {
               Swal.fire({
                 title: 'Ana Teresa Vargas Torres',
-                html:'<b>Documento:</b>25413574<br><h2>Primera dosis</h2><b>Fecha de Aplicación:</b>09/03/2021<br><b>Sede:</b>Titán Plaza<br><b>Laboratorio:</b>Sinovac <h2>Segunda dosis</h2><b>Fecha de Aplicación:</b>15/04/2021<br><b>Sede:</b>Bulevar Niza<br><b>Laboratorio:</b>Sinovac <h2>Tercera dosis</h2><b>Fecha de Aplicación:</b>04/11/2021<br><b>Sede:</b>Bulevar Niza<br><b>Laboratorio:</b>Moderna',
+                html:'<b>Documento:</b>25413574<br><h2>Primera dosis</h2><b>Fecha de Aplicación:</b>09/03/2021<br><b>Sede:</b>Titán Plaza<br><b>Nombre del biológico:</b> Sinovac <h2>Segunda dosis</h2><b>Fecha de Aplicación:</b>15/04/2021<br><b>Sede:</b>Bulevar Niza<br><b>Nombre del biológico:</b> Sinovac <h2>Tercera dosis</h2><b>Fecha de Aplicación:</b> 04/11/2021<br><b>Sede:</b> Bulevar Niza<br><b>Nombre del biológico:</b> Moderna',
                 confirmButtonText: 'ok',
                 confirmButtonColor: '#F3610E',
               })

@@ -307,7 +307,6 @@ footer{
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
-
     margin-bottom: 1rem;
 }
 
@@ -339,9 +338,7 @@ footer{
     width: 95%;
     padding: 1.8rem; 
     margin-bottom: 1rem;
-    margin: 0px auto;
-    
- 
+    margin: 0px auto; 
 }
 
 .guardar{
@@ -370,7 +367,8 @@ form{
 
 input, select{
     border:2px solid #2CA3AB;
-    height: 5vh;
+    border-radius: 5px;
+    height: 5.5vh;
     font-size: 8px;
     margin: 1rem;
 }
@@ -383,8 +381,6 @@ input, select{
 }
  
 .date input{
-
-
     margin-bottom: 1rem;
     margin-right:0rem;
     width: 100%;

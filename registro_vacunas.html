@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacunas</title>
+    <link type="image/x-icon" href="img/logo.png" rel="icon">
+    <link rel="stylesheet" type="text/css" href="css/estilos_pacientes.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/d5d81529d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="img/0. logoforja.png"  alt="logoforja"></a>
+        </div>
+        <div class="botones">
+            <a href="dashboard.html">
+                <button class="boton1"><i class="fa-solid fa-house-user"></i></button> 
+            </a>
+            <a href="login.html">
+                <button class="boton6"><i class="fa-solid fa-power-off"></i></button> 
+            </a>     
+        </div>
+    </header>
+    <main>
+        
+        <section id="franja">
+            <article class="franja" >
+            <img src="img/franja.png" alt="franja">
+            </article>
+        </section>    
+        <section id="titulo">
+            <div class="titulor">
+            <h1>INFORMACIÓN DEL PACIENTE</h1>
+            </div>
+        </section>        
+        <section id="principalr" >
+            <div class="divprincipalr">              
+                <form class="formur">
+                    <div class="formu">
+                        <article class="inputs">
+                            <input type="date" id="date" name="date">
+                            <input  name="nregistro" id="nregistro" type="text" placeholder="N registro">
+                        </article>
+
+                        <article>
+                            <div class="subtitulor">
+                                <i class="fa-solid fa-user"></i>
+                                <h2>DATOS DEL PACIENTE</h2>
+                            </div>
+                            <div class="inputs">
+                                <input required name="nombre" id="nombre" type="text" placeholder="Nombre">
+                                <input  required name="apellido" id="apellido" type="text" placeholder="Apellidos">
+                                <input  required name="id" id="id" type="text" placeholder="Número de identificación">
+                                <input required type="date" id="date" name="date">
+                                <input  name="edad" id="edad" type="text" placeholder="Edad">
+                                <select name="id" id="id">
+                                    <option value="0">EPS</option>
+                                    <option value="1">Aliansalud</option>
+                                    <option value="2">Cafam EPS</option>
+                                    <option value="3">Capital Salud EPS</option>
+                                    <option value="4"> Capresoca</option>
+                                    <option value="5">Colsubsidio</option>
+                                    <option value="6">COMFANDI</option>
+                                    <option value="7">Compensar</option>
+                                    <option value="8"> Coomeva</option>
+                                    <option value="9">Coosalud</option>
+                                    <option value="10">EPS Sanitas</option>
+                                    <option value="11">EPS Sura</option>
+                                    <option value="12">Famisanar</option>
+                                    <option value="13">Medimás</option>
+                                    <option value="14">Mutual SER</option>
+                                    <option value="15">Nueva EPS</option>
+                                    <option value="16">Salud Total</option>
+                                    <option value="17">Savia Salud EPS</option>
+                                    <option value="18">SISBEN IV</option>
+                                </select>
+                            </div>
+                        </article>
+                    </div> 
+                    <div class="formu">
+                        <article>
+                            <div class="subtitulor">
+                                <i class="fa-solid fa-syringe"></i>
+                                <h2>INFORMACIÓN DE VACUNACIÓN</h2>
+                            </div>
+                            <div class="inputs" >                                                
+                                <select name="sede" id="sede">
+                                    <option value="0">Sede</option>
+                                    <option value="1">Bulevar Niza</option>
+                                    <option value="2">Carrera</option>
+                                    <option value="3">Titán</option>
+                                </select>
+                                <select name="vacunador" id="vacunador">
+                                    <option value="0">Vacunador</option>
+                                    <option value="1">Santiago Aldana</option>
+                                    <option value="2">Maria Paula Sanchez</option>
+                                    <option value="3">Andres Pardo</option>
+                                    <option value="4">Luis felipe Ortiz</option>
+                                    <option value="5">Camila Reyes</option>
+                                    <option value="6">Camilo Quintero</option>
+                                    <option value="7">Lony Tapias</option>
+                                    <option value="9">Felipe Ramirez</option>
+                                    <option value="10">Otro</option>
+                                </select>  
+                                <input  name="docprofesional" id="docprofesional" type="text" placeholder="ID del profesional">
+                                <select name="dosis" id="dosis">
+                                    <option value="0">Dosis</option>
+                                    <option value="1">Primera</option>
+                                    <option value="2">Segunda</option>
+                                    <option value="3">Tercera</option>
+                                    <option value="4">Cuarta</option>
+                                </select>   
+                            </div>
+                        </article>                   
+                        <article>
+                            <div class="inputs2">
+                                <select name="biológico" id="biológico">
+                                    <option value="0">Biológico</option>
+                                    <option value="1">AstraZeneca</option>
+                                    <option value="2">Janssen</option>
+                                    <option value="3">Moderna</option>
+                                    <option value="4">Pfizer</option>
+                                    <option value="5">Sinovac</option>
+                                </select>                     
+                                <input  name="dosis1" id="dosis1" type="text" placeholder="Fecha 1ra Dosis">
+                                <input  name="dosis2" id="dosis2" type="text" placeholder="Fecha 2ra Dosis">
+                            </div>
+
+                        </article>
+                    </div>       
+                </form>
+                <div class="guardar">
+                <a href="pacientes.html">
+                    <button class="boton2">Guardar</button> 
+                </a>
+                </div>
+            </div>
+                
+        </section>
+
+    </main>
+    <footer>
+        <p>© 2021 FORJA EMPRESAS</p>
+    </footer>    
+</body>
+</ht
