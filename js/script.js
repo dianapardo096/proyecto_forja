@@ -131,5 +131,5 @@ function documento(){
 // funcion para datos registrados
 function guardado(){
 
-  window.location. href='dashboard.html'
+  alert("guardado")
 }
