@@ -131,5 +131,51 @@ function documento(){
 // funcion para datos registrados
 function guardado(){
 
-  alert("guardado")
+  Swal.fire({
+    title: '¿Desea guardar estos datos?',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#008f39',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Guardar',
+    cancelButtonText: 'Cancelar',
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire({
+        icon: 'success',
+        title: 'Datos guardados con éxito',
+        confirmButtonText: 'ok',
+        confirmButtonColor: '#F3610E',
+      }).then((value) => {
+        window.location. href='dashboard.html'
+      });
+    }
+  })
+}
+
+// funcion para cerrar sesion
+
+function salir(){
+
+  Swal.fire({
+    icon: 'info',
+    title: '¿Desea cerrar sesión?',
+    showDenyButton: false,
+    showCancelButton: true,
+    confirmButtonText: 'Salir',
+    confirmButtonColor: '#F3610E',
+    cancelButtonText: 'Cancelar',
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Cerrando sesión',
+        showConfirmButton: false,
+        timer: 1500
+      }).then((value) => {
+        window.location. href='login.html'
+      });
+    }
+  })
 }
